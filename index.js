@@ -9,7 +9,7 @@ const cors = require('cors')
 
 const app = express()
 app.use(cors())
-const port = 3000
+const port = process.env.PORT || 3000
 
 // var privateKey = Buffer(myPrivateKey, 'hex')
 const web3 = new Web3( 'wss://rinkeby.infura.io/ws/v3/08bf722966564ea182c198253fd055ad' )
